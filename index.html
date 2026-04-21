@@ -68,43 +68,73 @@
 
             <h1 id="project_anchor">Work</h1>
 
+            
+
+            <div class="project-6 project">
+                <h6>Beach Volleyball Scoreboard</h6>
+                <p class="client"><strong>The client:</strong> Beach Volleyball Community</p> 
+                <div class="pcontent">
+                    <p><strong>Purpose:</strong> A full-stack, mobile-responsive scoreboard application designed for competitive beach volleyball. 
+                    The app utilizes <strong>Socket.io</strong> to synchronize game states across multiple devices 
+                    instantly—allowing a phone to act as a remote control while a tablet acts as the 
+                    high-visibility display. The scoreboard is also compatible with a bluetooth remote control usually used for media but when paired with key mapper can be used to control the scoreboard from your pocket.
+                        <ul>
+                            <li><strong>Vascular Real-Time Sync:</strong> Built with Node.js and Express to ensure sub-100ms latency between referee inputs and spectator displays.</li>
+                            <li><strong>Hardware Integration:</strong> Engineered a custom JavaScript event handler to map Bluetooth media remote buttons (Volume/Track) to scoring actions.</li>
+                            <li><strong>Intelligent Game Logic:</strong> Programmed automatic side-switch alerts (7-point intervals) and "Win-by-2" set logic specifically for official Beach Volleyball rules.</li>
+                            <li><strong>Adaptive UI/UX:</strong> Features a "Broadcast Mode" that hides buttons and dynamically scales scores to fill the screen, alongside a CSS Flexbox layout that adapts to Portrait and Landscape orientations.</li>
+                        </ul>
+                    <br><strong>Target Audience:</strong> Sports Improvement App Users
+                    <br><strong>Tools:</strong> React.js, Node.js, Socket.io, CSS3 (Flexbox/Media Queries), Vite.
+                    </p>
+                </div>
+                <a href="https://sand-volleyball-scoreboard.onrender.com" target="_blank" class= button button-1>Check it out</a>
+                <a href="https://github.com/Nando354/my-scoreboard-project" target="_blank" class= button button-1>Check out Github</a>
+            </div>
+            <img id="proj-6" src="resources/img/Scoreboard.png">
+           
+
             <div class="project-1 project">
                 <h6>Read The Shot</h6>
-                <p><strong>The client:</strong> Beach Volleyball Community   
-                    <div class="pcontent">
-                        <p><strong>Purpose:</strong> A game designed so users can improve their ability to read volleyball shots in real time via video clips.
-                        The Volleyball Shot Reading Trainer is built on React Functional Components, employing the useState hook to manage the application's dynamic state, from controlling UI visibility and tracking the game's difficulty level (gameLevel) to updating the user's score and feedback messages. Lifecycle events and interactions with external systems are handled by the useEffect hook, responsible for dynamically fetching video details, initializing the shuffled playback queue, and managing time-sensitive logic like the blackout countdown timer in the Advanced mode. Seamless control over video playback and sound effects is achieved through the useRef hook, which provides persistent access to the YouTube Player iframe API methods and HTML Audio elements. Finally, the useMemo hook ensures performance by stably defining and caching large, static data sets, such as the initial list of video clips and arrays of possible feedback messages, contributing to a smooth and responsive training experience.
+                <p class="client"><strong>The client:</strong> Beach Volleyball Community</p> 
+                <div class="pcontent">
+                    <p><strong>Purpose:</strong> A game designed so users can improve their ability to read volleyball shots in real time via video clips.
+                    The Volleyball Shot Reading Trainer is built on React Functional Components, employing the useState hook to manage the application's dynamic state, from controlling UI visibility and tracking the game's difficulty level (gameLevel) to updating the user's score and feedback messages. Lifecycle events and interactions with external systems are handled by the useEffect hook, responsible for dynamically fetching video details, initializing the shuffled playback queue, and managing time-sensitive logic like the blackout countdown timer in the Advanced mode. Seamless control over video playback and sound effects is achieved through the useRef hook, which provides persistent access to the YouTube Player iframe API methods and HTML Audio elements. Finally, the useMemo hook ensures performance by stably defining and caching large, static data sets, such as the initial list of video clips and arrays of possible feedback messages, contributing to a smooth and responsive training experience.
 
-                        <br><strong>Target Audience:</strong> Sports Improvement App Users
-                        <br><strong>Tools:</strong> React, Javascript, HTML, CSS, Flexbox, iframe
-                        </p>
-                    </div>
-                <a href="https://www.experiencedhousecleaning.com" target="_blank" class= button button-1>Check it out</a>
-                <a href="https://github.com/Nando354/Small-Business" target="_blank" class= button button-1>Check out Github</a>
+                    <br><strong>Target Audience:</strong> Sports Improvement App Users
+                    <br><strong>Tools:</strong> React, Javascript, HTML, CSS, Flexbox, iframe
+                    </p>
+                </div>
+                <a href="https://read-the-shot.netlify.app/" target="_blank" class= button button-1>Check it out</a>
+                <a href="https://github.com/Nando354/game-on-reading-shots" target="_blank" class= button button-1>Check out Github</a>
             </div>
-            <img id="proj-1" src="resources/img/ReadTheShotNew.png">
+             <img id="proj-1" src="resources/img/ReadTheShotNew.png">
+            
 
             <div class="project-2 project">
                 <h6>My Bookshelf</h6>
-                <p><strong>The client:</strong> People saving books to their personal bookshelf
-                    <div class="pcontent">
-                        <p><strong>Purpose:</strong> Allows users to search for books and rate them. It demonstrates proficiency in front-end web development by integrating with a third-party API to access and display book-related information dynamically. It handles all user interactions, manages the API calls, parses the JSON response, and dynamically updates the HTML content. It sorts information categorically and provides a user-friendly interface.
-                        <br><strong>Target Audience:</strong> Organization/Productivity Tool App Users
-                        <br><strong>Tools:</strong> API, Asynchronous Javascript, HTML, CSS, Grid CSS, Flexbox
-                        </p>
-                    </div>
-                <a href="https://www.experiencedhousecleaning.com" target="_blank" class= button button-1>Check it out</a>
-                <a href="https://github.com/Nando354/Small-Business" target="_blank" class= button button-1>Check out Github</a>
+                <p class="client"><strong>The client:</strong> People saving books to their personal bookshelf</p>
+                <div class="pcontent">
+                    <p><strong>Purpose:</strong> Allows users to search for books and rate them. It demonstrates proficiency in front-end web development by integrating with a third-party API to access and display book-related information dynamically. It handles all user interactions, manages the API calls, parses the JSON response, and dynamically updates the HTML content. It sorts information categorically and provides a user-friendly interface.
+                    <br><strong>Target Audience:</strong> Organization/Productivity Tool App Users
+                    <br><strong>Tools:</strong> API, Asynchronous Javascript, HTML, CSS, Grid CSS, Flexbox
+                    </p>
+                </div>
+                <a href="https://nando354.github.io/Bookshelf/" target="_blank" class= button button-1>Check it out</a>
+                <a href="https://github.com/Nando354/Bookshelf" target="_blank" class= button button-1>Check out Github</a>
             </div>
             <img id="proj-2" src="resources/img/BookshelfNew2.png">
 
 
             <div class="project-3 project">
                 <h6>Jenny's Experienced House Cleaning</h6>
-                <p><strong>The client:</strong> Small Business Owner
-                <br><strong>The target audience:</strong> Customers specifically looking for cleaning and organizing services via Website.
-                <br><strong>Tools:</strong> HTML, CSS, Grid CSS, Flexbox, Media Queries
-                <br><strong>Contact Form:</strong> messages can be sent directly to the business owners email address when estimates are requested.</p>
+                <p class="client"><strong>The client:</strong> Small Business Owner</p>
+                <div class="pcontent">
+                    <p><strong>Purpose:</strong> A small business website for a cleaning and organizing service. It provides information about the services offered, pricing, and contact details. The website is designed to be user-friendly and visually appealing, with a focus on showcasing the professionalism and reliability of the business.
+                    <br><strong>The target audience:</strong> Customers specifically looking for cleaning and organizing services via Website.
+                    <br><strong>Tools:</strong> HTML, CSS, Grid CSS, Flexbox, Media Queries
+                    <br><strong>Contact Form:</strong> Messages can be sent directly to the business owners email address when estimates are requested.</p>
+                </div>
                 <a href="https://www.experiencedhousecleaning.com" target="_blank" class= button button-1>Check it out</a>
                 <a href="https://github.com/Nando354/Small-Business" target="_blank" class= button button-1>Check out Github</a>
             </div>
@@ -115,30 +145,32 @@
             <div class="project-4 project">
                 <h6>Todo or Not Todo </h6>
                 <!-- <div class="fixspace"> -->
-                    <div class="pcontent">
-                        <p><strong>Purpose:</strong> A todo list as a dynamic web application. It uses the browser's Local Storage to provide persistent data, allowing users to create and manage multiple to-do lists and their corresponding tasks. Creating and appending HTML elements, allowing for an interactive and responsive user experience. CRUD Functionality (Create, Read, Update, Delete). Each list item functions as a container for its own set of tasks. The application includes a checkbox feature for tasks, which automatically updates the parent list's visual state (e.g., adding a "completed" line-through) when all tasks within it are marked as done. This demonstrates complex conditional logic and data synchronization. Client-side JavaScript, DOM manipulation, event handling, and modern web storage techniques to build a robust and functional application from the ground up.
-                        <br><strong>Audience:</strong> Organization/Productivity Tool App Users
-                        <br><strong>Tools:</strong> Javascript, HTML, CSS, Grid CSS, Flexbox
-                        </p>
-                    </div>
-                    <!-- <div class="anchorcontent"> -->
-                        <a href="https://nando354.github.io/Todo/" target="_blank" class= button button-1>Check it out</a>
-                        <a href="https://github.com/Nando354/Todo" target="_blank" class= button button-1>Check out Github</a>
-                    <!-- </div> -->
+                <div class="pcontent">
+                    <p><strong>Purpose:</strong> A todo list as a dynamic web application. It uses the browser's Local Storage to provide persistent data, allowing users to create and manage multiple to-do lists and their corresponding tasks. Creating and appending HTML elements, allowing for an interactive and responsive user experience. CRUD Functionality (Create, Read, Update, Delete). Each list item functions as a container for its own set of tasks. The application includes a checkbox feature for tasks, which automatically updates the parent list's visual state (e.g., adding a "completed" line-through) when all tasks within it are marked as done. This demonstrates complex conditional logic and data synchronization. Client-side JavaScript, DOM manipulation, event handling, and modern web storage techniques to build a robust and functional application from the ground up.
+                    <br><strong>Audience:</strong> Organization/Productivity Tool App Users
+                    <br><strong>Tools:</strong> Javascript, HTML, CSS, Grid CSS, Flexbox
+                    </p>
+                </div>
+                <!-- <div class="anchorcontent"> -->
+                    <a href="https://nando354.github.io/Todo/" target="_blank" class= button button-1>Check it out</a>
+                    <a href="https://github.com/Nando354/Todo" target="_blank" class= button button-1>Check out Github</a>
+                <!-- </div> -->
                 <!-- </div> -->
             </div>
             <div class="proj-4-img">
-            <img id="proj-3" src="resources/img/todo.png">
+            <img id="proj-4" src="resources/img/todo.png">
             </div>
 
 
             <div class="project-5 project">
-                <h6>Aware</h6>
-                <p><strong>Purpose:</strong> A project to help people be aware of thought patterns and to either come up with solutions or let those thoughts pass.
-                    The purpose is to serve as a digital journal or a simple flashcard system for recording and reviewing user thoughts and corresponding responses. It provides a structured, two-part entry system that allows a user to Capture a "Thought" and record a "Response". It uses data persistance via local storage, responsive list management CRUD, DOM manipulation, UI feedback and modal animation, and event handling to create an interactive and user-friendly experience.
-                <br><strong>Audience:</strong> Self Help App Users
-                <br><strong>Tools:</strong> Javascript, HTML, CSS, Grid CSS, Flexbox
-                </p>
+                <h6>Awareness</h6>
+                <div class="pcontent">
+                    <p><strong>Purpose:</strong> A project to help people be aware of thought patterns and to either come up with solutions or let those thoughts pass.
+                        The purpose is to serve as a digital journal or a simple flashcard system for recording and reviewing user thoughts and corresponding responses. It provides a structured, two-part entry system that allows a user to Capture a "Thought" and record a "Response". It uses data persistance via local storage, responsive list management CRUD, DOM manipulation, UI feedback and modal animation, and event handling to create an interactive and user-friendly experience.
+                    <br><strong>Audience:</strong> Self Help App Users
+                    <br><strong>Tools:</strong> Javascript, HTML, CSS, Grid CSS, Flexbox
+                    </p>
+                </div>
                 <a href="https://nando354.github.io/Awareness/" target="_blank" class= button button-1>Check it out</a>
                 <a href="https://github.com/Nando354/awareness" target="_blank" class= button button-1>Check out Github</a>
             </div>

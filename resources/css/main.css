@@ -159,7 +159,8 @@ header {
 
 #proj-1 img {
     width: 100%;
-    height: auto;
+    height: 100%;
+   
 }
 
 .project{ 
@@ -173,11 +174,16 @@ header {
     justify-content: center;
     text-align: center;
     padding: 50px;
-    background-color: rgb(145, 226, 206);
+    background-color: rgba(8, 152, 116, 0.865);
+}
+
+.client {
+    padding: 20px 40px 0px 40px;
 }
 
 /* Sizing of project two image and description of project */
 .pcontent {
+    padding: 20px 40px 20px 40px;
     flex: auto;
     height: 100%;
     background-color: #D7E2E2;
@@ -196,29 +202,28 @@ header {
     max-height: 400px;
 }
 
-.projects .project-2 p {
+/* .projects .project-2 p, .projects .project-3 p {
     padding: 20px 40px 5px 40px;
-}
+} */
 
 .projects h6 { 
-    font-color: blue;
     font-size: 20px;
     /* border: solid black; */
     padding: 30px 20px 10px 20px;
     justify-content: center;
     text-align: center;
-    background-color: rgb(181, 226, 215);
+    background-color: rgb(92, 182, 160);
 }
 
 .projects p {
     /* border: solid black; */
-    padding: 20px 40px 40px 40px;
+    /* padding: 20px 40px 40px 20px; */
     background-color: rgb(215, 226, 226);
 }
 
-.projects .project-1 p {
+/* .projects .project-1 p {
     padding: 5px 40px 5px 40px;
-}
+} */
 
 .projects img {
     width: 100%;
@@ -227,11 +232,11 @@ header {
     border: solid 3px white;
     object-fit: fill;
     object-position: top center;
-    /* border-radius: 50%;    Add this for phone size */
-    
+    /* border-radius: 50%;    Add this for phone size */   
 }
 
-.project-1 {
+
+/* .project-1 {
     grid-column: 1/2;
     grid-row: 2/3;
 }
@@ -254,7 +259,38 @@ header {
 .project-5 {
     grid-column: 1/2;
     grid-row: 6/7;
+} */
+
+.project-6 {
+    grid-column: 1/2;
+    grid-row: 2/3;
 }
+
+.project-1 {
+    grid-column: 2/3;
+    grid-row: 3/4; 
+}
+
+.project-2 {
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+
+.project-3 {
+    grid-column: 2/3;
+    grid-row: 5/6;
+}
+
+.project-4 {
+    grid-column: 1/2;
+    grid-row: 6/7;
+} 
+
+.project-5 {
+    grid-column: 2/3;
+    grid-row: 7/8;
+}
+
 
 .button {
     display: flex;
@@ -272,6 +308,7 @@ header {
     margin: 4px 2px;
     cursor: pointer;
 }
+
 @media only screen and (max-width: 475px){
     .nav-bar ul{
         grid-gap:10px;
@@ -290,22 +327,56 @@ header {
         font-size: 30px;
     }
     /* Projects */
+    .client {
+        padding: 20px 20px 0px 20px;
+    }
+
+    /* Sizing of project two image and description of project */
+    .pcontent {
+        padding: 20px 20px 20px 20px;
+        flex: auto;
+        height: 100%;
+        background-color: #D7E2E2;
+    }
+    /* .projects p, .projects .project-1 p, .projects .project-2 p {
+        padding: 20px 10px 20px 10px;
+    } */
     #proj-1 {
         height:700%;
         /* height: 70%; */
         /* flex-basis: shrink; */
         max-height: 300px;
     }
-    #proj-2 {
-        margin-bottom: 250px;
+    #proj-6 {
+        height:1000%;
+        /* height: 70%; */
+        /* flex-basis: shrink; */
+        max-height: 800px;
+        margin-bottom: 0px;
     }
-    #proj-3 {
-        height: 400px;
-        max-height: 500px;
+    /* h6 {
+        margin-top: 80px;
+    } */
+    .proj-4-img {
+        margin-bottom: 40px;
     }
+    a.button {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+    img#proj-1 {
+        height: 1600%;
+        /* padding: 0px 10px; */
+    }
+    img#proj-2, img#proj-3, img#proj-5 {
+        height: 1400%;
+    }      
 }
+
 @media only screen and (max-width: 768px) {
-    
+    .projects h6 {
+        margin-top: 80px;
+    }
     .item-7 {
         /* grid-area: projects; */
         display: flex;
@@ -316,12 +387,37 @@ header {
     }
     .projects img {
        margin-top: 0px;
-       margin-bottom: 150px;
-        /* border-radius: 50%;    Add this for phone size */
-        
+    }
+    img#proj-4 {
+        height: 85%;
+    }
+    .project-5 h6 {
+        margin-top: 0px;
     }
 }
 
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+    img#proj-6 {
+        padding: 100px 0px 180px 0px;
+    }
+    img#proj-1 {
+        /* height: 1600%; */
+        padding: 80px 0px 180px 0px;
+    }
+    img#proj-2, img#proj-5 {
+        /* height: 1400%; */
+        padding: 60px 0px 60px 0px;
+    }   
+    img#proj-3 {
+        padding: 120px 0px 120px 0px;
+    }
+    img#proj-4 {
+        padding: 80px 0px 80px 0px;
+    }
+    .projects img {
+        border: none;
+    }
+}
 
 @media only screen and (min-width: 1800px) and (max-width: 3000px) {
     .item-6 p {
@@ -332,6 +428,7 @@ header {
         margin-left: 70%;
     }
 }
+
 @media only screen and (min-width: 2550px) and (max-width: 3000px) {
     /* About */
     /* .item-6 p {
@@ -350,7 +447,6 @@ header {
         flex: none;
         height: 20%;  
     }
-
 }
 /*--------------------Footer-------------*/
 
@@ -376,9 +472,7 @@ header {
 .footer-nav h4 {
     padding: 10px;
     width: 200px
-    justify-items: end;
-    
-  
+    justify-items: end;  
 }
 
 .footer-nav a {
@@ -387,13 +481,10 @@ header {
     padding-bottom: 10px;
 }
 
-
 .footer-nav p {
     grid-column: 6/7;
     color: grey;
     font-size: 18px;
     padding: 10px;
     width: 200px;
-    
-
 }
